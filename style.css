@@ -66,13 +66,16 @@ header{
   
     color: var(--white-color);  
     text-align: center;
-      background-image: url(./assets/hero-bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 100vh;
-    padding: 60px 0;
-    
+    padding: 60px 0 0 0;
+     background: var(--primary-color);
+    background-image: url(./assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
 }
+
 header h2{
     font-size: 2.5rem;
     font-weight: bold;
@@ -120,13 +123,16 @@ header h2{
     background: linear-gradient(to top right ,#F7E93F, #FB09B4, #9100F8);
 }
 .musicimg{
+    
     position: relative;
     width: 300px;
     height: 300px;
-    margin: auto;
+    margin: 0 auto;
   
+   
 
 }
+
 .txtimg {
   position: absolute;
   top: 8%;
@@ -154,7 +160,7 @@ header h2{
     text-align: center; 
     background: var(--primary-color);
     color: white;
-   padding: 50px 200px;
+   padding: 0 200px 50px 200px;
 }
 #headingdesc h2{
     font-size: 1.8rem;
@@ -220,6 +226,7 @@ header h2{
 .featuredcontainer{
     justify-content: center;
     place-items: center;
+
 }
 #featured h2{
     font-weight: bold;
@@ -295,11 +302,88 @@ footer{
     nav{
         display: block;
         margin: 0;
+        position: relative;
     }
     nav ul, .subscribe{
         display: none;
     }
     .logotxt{
+        font-size: 1.5rem;
         margin-left: 20px;
     }
+    nav::before{
+         content: "";
+  display: inline-block;
+  cursor: pointer;
+  width: 24px;
+  position: absolute;
+  height: 24px;
+  left: 400px;
+  top: 40px;
+  background-image: url("./assets/hamburger-menu.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+    }
+    .musicimg {
+        width: 250px;
+    }
+    .txtimg {
+
+  top: 15%;
+  right: -10%;}
+  .frontimg{
+    width: 80px;
+  }
+
+  #headingdesc{
+    
+   padding: 40px ;
+}
+
+#acheivemnt{
+    display: grid;
+
+
+    justify-content: center;
+    grid-template-columns: auto auto;
+     padding: 0 0 50px 0;
+}
+ .container{
+    display: block;
+   
+ }
+ .insidecontainer{
+    margin: 20px
+ }
+ #featured{
+
+    padding: 0 50px 50px 50px;
+ 
+}
+.featuredcontainer{
+    display: block;
+}
+.thehost{
+    flex-direction: column;
+    text-align: center;
+
+}
+#host{
+    padding: 30px;
+}
+.icons{
+    justify-content: center;
+}
+footer{
+    padding-bottom: 40px;
+}
+.footericons {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    font-size: 1.3rem;
+}
+.herotxt p{
+  padding: 0 50px;
+}
 }
