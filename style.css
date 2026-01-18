@@ -217,6 +217,10 @@ header h2{
     color: white;
     padding-bottom: 50px;
 }
+.featuredcontainer{
+    justify-content: center;
+    place-items: center;
+}
 #featured h2{
     font-weight: bold;
     font-size: 1.8rem;
@@ -283,4 +287,19 @@ footer{
 }
 .footericons a{
    margin-right: 20px;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    nav{
+        display: block;
+        margin: 0;
+    }
+    nav ul, .subscribe{
+        display: none;
+    }
+    .logotxt{
+        margin-left: 20px;
+    }
 }
