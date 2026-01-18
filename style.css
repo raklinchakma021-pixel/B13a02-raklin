@@ -299,6 +299,9 @@ footer{
 
 
 @media screen and (max-width: 576px) {
+    header{
+        height: auto;
+    }
     nav{
         display: block;
         margin: 0;
@@ -318,7 +321,7 @@ footer{
   width: 24px;
   position: absolute;
   height: 24px;
-  left: 400px;
+  left: 350px;
   top: 40px;
   background-image: url("./assets/hamburger-menu.png");
   background-size: cover;
@@ -386,4 +389,5 @@ footer{
 .herotxt p{
   padding: 0 50px;
 }
+
 }
