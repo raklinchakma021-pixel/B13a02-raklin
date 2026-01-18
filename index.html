@@ -9,9 +9,10 @@
     <title>TechWave</title>
 </head>
 <body>
-     <nav class="flex justify-between items-center">
+     <div class="navbar">
+         <nav class="flex justify-between items-center">
 
-        <h2>Tech<span class="wave">Wave</span></h2>
+        <h2 class="logotxt">Tech<span class="wave">Wave</span></h2>
         <ul class="flex">
             <li><a href="">About</a></li>
             <li><a href="">Episodes</a></li>
@@ -19,5 +20,148 @@
         </ul>
         <button class="subscribe">Subscribe<i class="fa-solid fa-arrow-right"></i></button>
      </nav>
+     </div>
+
+     <header>
+        <div class="musicimg">
+            <img src="./assets/hero-circle.png" class="backimg" alt="">
+            <div class="txtimg">
+                <p>New</p>
+            </div>
+            <img src="./assets/microphone.png" class="frontimg" alt="">
+        </div>
+        <div class="herotxt">
+            <h2>TechWave</h2>
+            <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
+            <div class="btn">
+                <a class="leftbtn" href=""><i class="fa-brands fa-spotify "></i>Listen On Spotify</a>
+            <a class="rightbtn" href=""><i class="fa-solid fa-envelope"></i>Subscribe</a>
+            </div>
+        </div>
+     </header>
+
+     <section id="headingdesc">
+        <h2>About the Podcast</h2>
+        <p>TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. <br>
+We break down complex topics into digestible insights, explore productivity strategies that actually work, <br>
+and share stories of personal growth from industry leaders.
+ <br>
+ <br>
+Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+     </section>
+
+     <section id="acheivemnt" class="flex justify-between text-center">
+        <div>
+            <h3>150K+</h3>
+            <p>Monthly Listeners</p>
+        </div>
+        <div>
+            <h3>200+</h3>
+            <p>Episodes Published</p>
+        </div>
+        <div>
+            <h3>4.9<i class="fa-solid fa-star"></i></h3>
+            <p>Average Rating</p>
+        </div>
+        <div>
+            <h3>50+</h3>
+            <p>Industry Experts</p>
+        </div>
+     </section>
+
+     <section id="why">
+        <h2>Why Choose TechWave</h2>
+     
+        <div class="container grid grid-cols-6 grid-rows-6 gap-5 max-w-4xl">
+           <div class="insidecontainer col-span-2 row-span-4 content-center">
+            <img src="./assets/headphone.png" alt="">
+            <h3>Premium Audio Quality</h3>
+            <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+           </div>
+           <div class="insidecontainer col-span-4 row-span-2 content-center">
+            <img src="./assets/device.png" alt="">
+            <h3>Mobile Friendly</h3>
+            <p>Listen on the go with seamless mobile experience and offline downloads.</p>
+           </div>
+           <div class="insidecontainer col-span-4 row-span-2 content-center">
+          <img src="./assets/location.png" alt="">
+            <h3>Global Community</h3>
+            <p>Connect with tech enthusiasts from over 120 countries worldwide.</p>
+           </div>
+           <div class="insidecontainer col-span-4 row-span-2 content-center">
+           <img src="./assets/location.png" alt="">
+            <h3>Exclusive Interviews</h3>
+            <p>Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
+           </div>
+           <div class="insidecontainer col-span-2 row-span-2 content-center">
+             <img src="./assets/resource.png" alt="">
+            <h3>Rich Resources</h3>
+            <p>Access show notes, transcripts, and additional learning materials for every episode.</p>
+           </div>
+         
+           
+        </div>
+     </section>
+     <section id="featured">
+    <h2>Featured Episodes</h2>
+    <div class="featuredcontainer flex">
+     
+        <div class="items w-sm">
+            <iframe width="100%" src="https://www.youtube.com/embed/oX7OduG1YmI" allowfullscreen></iframe>
+            <div class="featuredtxt">
+                <h3>The Future of AI in Everyday Life</h3>
+            <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+             <span><i class="fa-solid fa-clock"></i>42 min</span>
+            </div>
+        </div>
+        <div class="items w-sm">
+            <iframe width="100%" src="https://www.youtube.com/embed/oX7OduG1YmI" allowfullscreen></iframe>
+            <div class="featuredtxt">
+                <h3>The Future of AI in Everyday Life</h3>
+            <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+                         <span><i class="fa-solid fa-clock"></i>42 min</span>
+
+            </div>
+        </div>
+        <div class="items w-sm">
+            <iframe width="100%" src="https://www.youtube.com/embed/oX7OduG1YmI" allowfullscreen></iframe>
+            <div class="featuredtxt">
+                <h3>The Future of AI in Everyday Life</h3>
+            <p>Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
+                        <span><i class="fa-solid fa-clock"></i>42 min</span>
+
+            </div>
+        </div>
+      
+    </div>
+     </section>
+
+     <section id="host">
+        <h3 class="text-center text-white font-bold text-3xl ">Meet The Host</h3>
+        <div class="thehost flex ">
+            <img src="./assets/host.png" alt="">
+          <div class="hostdesc text-white">
+              <h2 class="font-bold text-2xl">Alex Kumar</h2>
+            <p>Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
+               <div class="icons flex">
+            <a href=""> <img src="./assets/instagram.png" alt=""></a>   
+          <a href="">      <img src="./assets/linkedin.png" alt=""></a>
+              <a href="">  <img src="./assets/x.png" alt=""></a>
+                <a href=""><img src="./assets/youtube.png" alt=""></a>
+            </div>
+          </div>
+         
+        </div>
+     </section>
+     <footer>
+        <h1 class="text-white text-5xl font-bold">Tech<span class="wave">Wave</span></h1>
+        <div class="footericons ">
+            <a href=""><i class="fa-brands fa-spotify"></i>Spotify</a>
+            <a href=""><i class="fa-brands fa-apple"></i>Apple Podcasts</a>
+            <a href=""><i class="fa-brands fa-twitter"></i>Twitter</a>
+            <a href=""><i class="fa-brands fa-youtube"></i>YouTube</a>
+        </div>
+        <span class="text-white">&copy; 2026 TechWave Podcast. All rights reserved.</span>
+     </footer>
 </body>
 </html>

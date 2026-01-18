@@ -1,23 +1,28 @@
 @import "tailwindcss";
 :root{
-    --primary-color: #412567;
+    --primary-color: #1a0b2e;
     --white-color: #ffffff;
     --gradient-color:  linear-gradient(#FB09B4, #F7E93F,#9100F8);
     --margin-lr: 0 120px;
+    --another-color: #00ff88;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #412567;
+
+}
+.navbar{
+    background-color: var(--primary-color);
 }
 nav{
     color: var(--white-color);
     margin: var(--margin-lr);
     padding: 30px 0;
+  
     
 }
-nav h2{
+.logotxt{
     font-size: 2rem;
     font-weight: bold;
 }
@@ -45,7 +50,7 @@ nav ul li a{
     padding-left: 24px;
     text-decoration: none;
 
-
+  
 }
 
 
@@ -54,4 +59,228 @@ nav ul li a:hover{
   
     text-decoration: underline;
   
+}
+
+
+header{
+  
+    color: var(--white-color);  
+    text-align: center;
+      background-image: url(./assets/hero-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 60px 0;
+    
+}
+header h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.herotxt{
+    margin-top: 30px;
+}
+.herotxt h2,p{
+    margin: 10px 0;
+}
+.btn{
+    padding-top: 30px;
+}
+.btn a:hover{
+    opacity: 0.7;
+}
+.btn a{
+    font-weight: bold;
+  
+    padding: 16px 24px;
+    border-radius: 30px;
+
+}
+.btn i {
+    margin-right: 10px;
+}
+.rightbtn{
+    color: #00ff88;
+      border: 1px solid var(--another-color);
+    background: transparent;
+    animation: heyAni 1s ease-in  infinite;
+}
+@keyframes heyAni {
+    from{
+      border: 1px solid var(--another-color);
+      color: #00ff88;
+     
+    }
+    to{
+        border: 1px solid #FB09B4;
+        color: #FB09B4;
+    }
+}
+.leftbtn{
+    background: linear-gradient(to top right ,#F7E93F, #FB09B4, #9100F8);
+}
+.musicimg{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+  
+
+}
+.txtimg {
+  position: absolute;
+  top: 8%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+  color: black;
+  background: #00ff88;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 0 16px;
+  text-transform: capitalize;
+}
+.musicimg img{
+    position: absolute;
+      top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.frontimg, .backimg{
+    background: transparent;
+}
+#headingdesc{
+    padding: var(--margin-lr);
+    text-align: center; 
+    background: var(--primary-color);
+    color: white;
+   padding: 50px 200px;
+}
+#headingdesc h2{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+#acheivemnt{
+    background: var(--primary-color);
+    padding: 50px 200px;
+}
+#acheivemnt p{
+    text-transform: uppercase;
+    color: white;
+}
+#acheivemnt h3{
+    color: var(--another-color);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.insidecontainer{
+    padding:  20px;
+    border-radius: 10px;
+    background: #351165;
+    text-align: left;
+    
+}
+.insidecontainer img{
+    padding: 10px 0;
+}
+#why{
+  background: #230E3D;
+    place-items: center;
+    color: white;
+    padding-bottom: 80px;
+
+}
+#why h2{
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding: 80px 20px 20px 20px;
+}
+.insidecontainer h3{
+    font-weight: bold;
+  
+}
+.insidecontainer{
+        animation-name: myAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay:  2s;
+}
+@keyframes myAnimation {
+  from {background-color: #351165;}
+  to {background-color: #9100F8;}
+}
+#featured{
+    background: var(--primary-color);
+    padding: var(--margin-lr);
+    color: white;
+    padding-bottom: 50px;
+}
+#featured h2{
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding: 50px 20px 20px 20px;
+    text-align: center;
+}
+.items{
+    background-color: #351165;
+    margin: 10px;
+    border-radius: 10px;
+}
+.items h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+.featuredtxt{
+    padding: 10px;
+}
+.items span{
+    color: #00ff88;
+    font-weight: bold;
+}
+.items span i {
+    margin-right: 5px;
+    
+}
+#host {
+    background: var(--primary-color);
+    padding: var(--margin-lr);
+    padding-bottom: 80px;
+}
+.thehost {
+    border-radius: 30px;
+    padding: 20px;
+    background: #351165;
+        align-items: center;
+    justify-content: center;
+}
+.text-3xl{
+    padding-bottom: 30px;
+}
+.hostdesc{
+    margin-left: 10px;
+    
+}
+.hostdesc .icons img{
+    border: 1px solid #9100F8;
+    border-radius: 50%;
+    padding: 6px;
+    margin-right: 10px;
+}
+
+footer{
+    background: #351165;
+    padding: 50px 0;
+    text-align: center;
+    
+}
+.footericons{
+    color: white;
+    padding: 20px 0;
+    place-content: center;
+}
+.footericons a{
+   margin-right: 20px;
 }
